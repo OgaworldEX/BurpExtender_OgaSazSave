@@ -5,6 +5,6 @@ BurpSuiteから[Fiddler](https://www.telerik.com/fiddler)のログ形式であ�
 ## Usage
 BurpSuite の Python Extensionとしてロードしてください。
 
-出力先はc:\tmp固定です。変えたい場合は適宜変えてください。
+出力先はc:\tmp固定です。存在しない場合は作成してください。
 
 Historyなど保存したい場所で右クリックの「Send to OgaSazSave」を選択して保存します。
