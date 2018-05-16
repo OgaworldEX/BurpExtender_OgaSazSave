@@ -1,6 +1,6 @@
 # BurpExtender_OgaSazSave
 
-BurpSuiteからFiddler(https://www.telerik.com/fiddler)のログ形式であるSAZ(Session Archive)を出力するExtentionです。
+BurpSuiteから[Fiddler](https://www.telerik.com/fiddler)のログ形式であるSAZ(Session Archive)を出力するExtentionです。
 
 ## Usage
 BurpSuite の Python Extensionとしてロードしてください。
