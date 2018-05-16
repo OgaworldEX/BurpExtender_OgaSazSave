@@ -1,0 +1,2 @@
+# BurpExtender_OgaSazSave
+BurpSuiteからSazファイルを保存するためのExtentionです。
