@@ -34,7 +34,7 @@ class BurpExtender(IBurpExtender):
         saveSazhandler = RightClickHandler(self.callbacks)
         callbacks.registerContextMenuFactory(saveSazhandler)
         
-        self.stdout.println("OgaSazSave v0.9 Load OK!!")
+        self.stdout.println("OgaSazSave v0.9.1 Load OK!!")
 
 class RightClickHandler(IContextMenuFactory):
 
@@ -168,7 +168,7 @@ def chageRequestLinePathtoUrl(helpers,httpReqRes):
     port = httpReqRes.getHttpService().getPort()
 
     if port <> 80 and port <> 443:
-        host = host + ":" + port
+        host = host + ":" + str(port)
 
     newRequestLine = method + " " + protocol + "://" + host + reqpath + " " + version
 
