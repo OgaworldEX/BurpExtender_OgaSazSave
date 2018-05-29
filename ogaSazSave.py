@@ -151,9 +151,13 @@ def chageRequestLinePathtoUrl(helpers,httpReqRes):
     requestString = ''
     requestPythonByteList = []
 
-    for b in requestbytelist:
-        requestString = requestString + chr(b)
-        requestPythonByteList.append(b)
+    for b in requestbytelist:        
+        try:
+            requestString = requestString + unichr(b)        
+        except ValueError:
+            pass
+        finally:
+            requestPythonByteList.append(b)
 
     hrsp = HttpRequestRawStringParser(requestString)
     method = hrsp.getRequestMethod()
