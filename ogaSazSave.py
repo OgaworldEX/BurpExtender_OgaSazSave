@@ -34,7 +34,7 @@ class BurpExtender(IBurpExtender):
         saveSazhandler = RightClickHandler(self.callbacks)
         callbacks.registerContextMenuFactory(saveSazhandler)
         
-        self.stdout.println("OgaSazSave v0.9.1 Load OK!!")
+        self.stdout.println("OgaSazSave v0.9.2 Load OK!!")
 
 class RightClickHandler(IContextMenuFactory):
 
